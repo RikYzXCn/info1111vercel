@@ -1,0 +1,27 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  
+  "regions": ["syd1"],
+
+  "redirects": [
+    {
+      "source": "/notice",
+      "destination": "/notices",
+      "permanent": true
+    }
+  ],
+
+  "crons": [
+    {
+      "path": "/api/hello",
+      "schedule": "0 5 * * *"
+    }
+  ],
+
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  }
+
+}
