@@ -1,0 +1,13 @@
+node_modules
+.next
+
+Dockerfile
+php-service/
+
+!api/**/*.php       # PHP 后端
+!app/**             # Next.js 页面
+!components/**      # React 组件
+!lib/**             # Supabase 客户端等
+!package.json
+!vercel.json
+!next.config.js
